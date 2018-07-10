@@ -39,8 +39,9 @@ input[type="button"] , input[type="submit"] , input[type="reset"] {
     <input onclick="t2s()" value="轉換為簡體" class="downs" type="button">
     <textarea name="text" id="text" rows="" cols="" onkeyup="changeText(this);"></textarea>
 	<div class="tops">
-	<input value="復原" onclick="undo()" type="button">
-    <input onclick="blank()" value="清除" type="button">
+	<!--input value="復原" onclick="undo()" type="button"-->
+    	<input onclick="blank()" value="清除" type="button">
+	<input value="複製" onclick="this.focus();this.select();document.execCommand('copy')" type="button">
 	</div>
 	<div class="rightme">
 	<font style="font-size:9px;" color="#d0d0d0">Ctrl+A or Ctrl+V</font> 總共有：<span id="textCount" class="star">0</span> 字
