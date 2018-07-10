@@ -1,0 +1,52 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>簡轉繁 繁轉簡</title>
+
+<style type="text/css">
+textarea {
+    padding: 0;
+    width: 100%;
+	box-sizing: border-box;
+	height: 300px;
+	border: 1px solid #E1E100;
+	background: #F5FFFA;
+	overflow: auto;
+}
+input[type="button"] , input[type="submit"] , input[type="reset"] {
+	border: 2px solid;
+	border-radius: 3px;
+	background: #FFF8C5;
+	height: 29px;
+	color: #009900;
+	padding: 0 10px;
+	cursor: pointer;
+	border-color: #FF9D6F #FDB939 #FDB939 #FF9D6F;
+	font: 12px/1.6em Helvetica, Arial, sans-serif;
+}
+.rightme {
+	text-align: right;
+}
+</style>
+</head>
+
+<body>
+<form name="biggbks">
+    <input value="轉換編碼" onclick="char2ncr()" class="downs" type="button">
+    <input value="編碼翻譯" onclick="ncr2char()" class="downs" type="button">
+    <input onclick="s2t()" value="轉換為繁體" class="downs" type="button">
+    <input onclick="t2s()" value="轉換為簡體" class="downs" type="button">
+    <textarea name="text" id="text" rows="" cols="" onkeyup="changeText(this);"></textarea>
+	<div class="tops">
+	<input value="復原" onclick="undo()" type="button">
+    <input onclick="blank()" value="清除" type="button">
+	</div>
+	<div class="rightme">
+	<font style="font-size:9px;" color="#d0d0d0">Ctrl+A or Ctrl+V</font> 總共有：<span id="textCount" class="star">0</span> 字
+	</div>
+  </form>
+
+</body>
+
+</html> 
