@@ -6,6 +6,13 @@
 <title>簡轉繁 繁轉簡</title>
 <script type="text/javascript" src="gbkbig5.js"></script>
 <style type="text/css">
+
+* {
+  max-width:1200px;
+  margin-left:auto;
+  margin-right:auto;	
+}
+	
 textarea {
  
     width: 100%;
@@ -52,7 +59,7 @@ input[type="button"] , input[type="submit"] , input[type="reset"] {
 	<input value="複製" onclick="document.getElementById('text').focus();document.getElementById('text').select();document.execCommand('copy')" type="button">
 	</div>
 	<div class="rightme">
-	<font style="font-size:9px;" color="#d0d0d0">Ctrl+A or Ctrl+V</font> 總共有：<span id="textCount" class="star">0</span> 字
+	 總共有：<span id="textCount" class="star">0</span> 字
 	</div>
   </form>
 
