@@ -28,6 +28,11 @@ input[type="button"] , input[type="submit"] , input[type="reset"] {
 .rightme {
 	text-align: right;
 }
+.tops{
+	display: inline-block;
+	float:right;
+}
+	
 </style>
 </head>
 
@@ -35,8 +40,10 @@ input[type="button"] , input[type="submit"] , input[type="reset"] {
 <form name="biggbks">
     <!--input value="轉換編碼" onclick="char2ncr()" class="downs" type="button">
     <input value="編碼翻譯" onclick="ncr2char()" class="downs" type="button"-->
-    <input onclick="s2t()" value="轉換為繁體" class="downs" type="button">
-    <input onclick="t2s()" value="轉換為簡體" class="downs" type="button">
+	<div class="tops">
+    		<input onclick="s2t()" value="轉換為繁體" class="downs" type="button">
+    		<input onclick="t2s()" value="轉換為簡體" class="downs" type="button">
+	</div>
     <textarea name="text" id="text" rows="" cols="" onkeyup="changeText(this);"></textarea>
 	<div class="tops">
 	<!--input value="復原" onclick="undo()" type="button"-->
